@@ -43,7 +43,7 @@ $table_prefix = 'wp_';
  *
  * A corresponding MO file for the chosen language must be installed to app/languages
  */
-define('WPLANG', '');
+define('WPLANG', 'nl_NL');
 
 /**
  * Authentication Unique Keys and Salts

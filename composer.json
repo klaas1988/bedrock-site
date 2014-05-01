@@ -46,7 +46,7 @@
         "type": "webroot",
         "dist": {
           "type": "zip",
-          "url": "https://wordpress.org/wordpress-3.9.zip"
+          "url": "http://nl.wordpress.org/wordpress-3.9-nl_NL.zip"
         },
         "require" : {
           "fancyguy/webroot-installer": "1.1.0"
