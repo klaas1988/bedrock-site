@@ -1,6 +1,6 @@
 # encoding: UTF-8
 set :application, 'sportdriewo.nl'
-set :repo_url, 'http://github.com/klaas1988/bedrock-site.git'
+set :repo_url, 'git@github.com:klaas1988/bedrock-site.git'
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)
