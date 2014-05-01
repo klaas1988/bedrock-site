@@ -45,6 +45,14 @@ $table_prefix = 'wp_';
  */
 define('WPLANG', 'nl_NL');
 
+if ( defined( 'WPLANG' ) && '' !== WPLANG && !defined( 'WP_LANG_DIR' ) ) {
+  if ( !file_exists( WP_CONTENT_DIR . '/languages' ) ) {
+    $old_content_dir = $root_dir . implode( '', explode( WP_HOME, WP_SITEURL ) ) . '/wp-content/languages';
+    if ( file_exists( $old_content_dir ) && @is_dir( $old_content_dir ) )
+      define( 'WP_LANG_DIR', $old_content_dir );
+  }
+}
+
 /**
  * Authentication Unique Keys and Salts
  */
